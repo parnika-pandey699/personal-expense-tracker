@@ -1,4 +1,4 @@
-#Personal Expense Tracker
+# Personal Expense Tracker
 ## About the Project
 
 This is a simple personal expense tracker made by using python
@@ -10,11 +10,11 @@ The currently allows the user to:
 - add a new expense
 - view all saved expenses
 - delete an expense
-- search expense ny category or discription
-- save the total amount spent
+- search expense by category or discription
+- view the total amount spent
 - save expenses in a CSV file
 - load saved expenses when the program starts 
-- handle invalid inputs such as empty texts and invalid amount
+- handle invalid inputs such as empty text and invalid amount
 
 ## Technologies used
 -Python
