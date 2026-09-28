@@ -14,9 +14,8 @@
 
 **Institution:** VIT Bhopal University
 
-**registration number:**26BCE10699
-
 **Academic Year:** 2026
+
 
 # 1. Introduction
 
@@ -30,6 +29,7 @@ Expenses are stored in a CSV file so that the recorded information can be loaded
 
 The project follows a modular structure where different tasks are handled by separate Python files. This makes the program easier to understand, test, and maintain.
 
+
 # 2. Problem Statement
 
 Managing daily expenses can become difficult when expenses are not recorded properly or are written down in different places. It can also be difficult to know how much has been spent in total or which categories account for most of the spending.
@@ -37,6 +37,7 @@ Managing daily expenses can become difficult when expenses are not recorded prop
 The problem addressed by this project is the lack of a simple and organized way to record and manage personal expenses.
 
 The Personal Expense Tracker provides a simple command-line solution where users can record their expenses, manage existing records, search for expenses, and view basic spending information.
+
 
 # 3. Project Objectives
 
@@ -49,6 +50,7 @@ The main objectives of the Personal Expense Tracker are:
 - To store expense information so it can be used again later.
 - To handle common invalid inputs without crashing the program.
 - To practice Python concepts such as classes, functions, modules, file handling, validation, error handling, and testing.
+
 
 # 4. Functional Requirements
 
@@ -109,6 +111,7 @@ The program handles common input errors such as:
 - Invalid expense number
 - Invalid menu choice
 
+
 # 5. Non-Functional Requirements
 
 The following requirements describe how the Personal Expense Tracker should behave.
@@ -132,6 +135,7 @@ The project is divided into separate Python modules based on their purpose. This
 ## 5.5 Performance
 
 The program should respond quickly for the normal amount of data expected in a personal expense tracker.
+
 
 # 6. System Architecture
 
@@ -157,7 +161,7 @@ The Personal Expense Tracker follows a simple modular architecture. The user int
           |
           v
      expenses.csv
-
+```
 
 ## 6.2 Main Components
 
@@ -191,7 +195,8 @@ This module contains helper functions used by the project, such as formatting ex
 
 ### `data/expenses.csv`
 
-This CSV file stores the expense records so that they can be loaded again when the application is started.  
+This CSV file stores the expense records so that they can be loaded again when the application is started.
+
 
 # 7. Process Workflow
 
@@ -239,6 +244,7 @@ The Personal Expense Tracker follows a simple menu-based workflow. The user sele
 7. After completing an operation, the program returns to the main menu.
 8. When the user selects Exit, the program ends.
 
+
 # 8. Storage Design
 
 The Personal Expense Tracker uses a CSV file to store expense records. The file is named `expenses.csv` and is stored inside the `data` folder.
@@ -271,6 +277,7 @@ The `storage.py` module is responsible for saving and loading expense data.
 When a new expense is added, the updated expense list is saved to the CSV file.
 
 When the program starts, the saved expenses are loaded from the CSV file so that previously recorded data is available again.
+
 
 # 9. Use Case Diagram
 
@@ -308,6 +315,7 @@ The user can:
 - View a summary of spending.
 
 The application is designed for a single user who manages their own personal expense records.
+
 
 # 10. Class Diagram
 
@@ -361,6 +369,7 @@ The `ExpenseManager` class manages multiple expense records.
 
 It stores `Expense` objects in a list and provides functions for adding, viewing, deleting, and searching expenses.
 
+
 # 11. Sequence Diagram
 
 The sequence diagram shows the interaction between the user and the different modules when a new expense is added.
@@ -397,6 +406,7 @@ User          main.py       Validators     ExpenseManager      Storage
 5. The expense is added to the expense list.
 6. The updated expense list is saved to the CSV file.
 7. The program displays a success message to the user.
+
 
 # 12. Design Decisions
 
@@ -439,6 +449,7 @@ For example, the program checks for empty text, invalid amounts, and invalid exp
 Separate test files were created to check important parts of the project.
 
 The tests cover the `Expense` class, validation functions, expense management, and saving and loading data.
+
 
 # 13. Implementation
 
@@ -502,6 +513,7 @@ The main menu provides the following options:
 
 The program continues displaying the menu until the user selects the Exit option.
 
+
 # 14. Screenshots and Results
 
 The Personal Expense Tracker was tested by running the application through the command line and using its different menu options.
@@ -512,7 +524,7 @@ The main menu displays all the available options to the user.
 
 **Screenshot: Main Menu**
 
-_Insert the screenshot of the main menu here._
+![Main Menu](screenshots/main_menu.png)
 
 ## 14.2 Adding an Expense
 
@@ -520,7 +532,7 @@ The user can enter the date, category, description, and amount to add a new expe
 
 **Screenshot: Adding an Expense**
 
-_Insert the screenshot showing an expense being added successfully._
+![Adding an Expense](screenshots/add_expense.png)
 
 ## 14.3 Viewing Expenses
 
@@ -528,32 +540,23 @@ The program displays the saved expenses along with their date, category, descrip
 
 **Screenshot: Viewing Expenses**
 
-_Insert the screenshot showing the recorded expenses here._
+![Viewing Expenses](screenshots/view_expenses.png)
 
 ## 14.4 Expense Summary
 
-The summary displays the number of expenses, total amount spent, and category-wise spending.
+The program displays the number of recorded expenses, total amount spent, and category-wise spending.
 
 **Screenshot: Expense Summary**
 
-_Insert the screenshot of the expense summary here._
+![Expense Summary](screenshots/summary.png)
 
-## 14.5 Test Results
+## 14.5 Additional Expense Summary
 
-The project was also tested using Python's built-in `unittest` module.
+A second summary screenshot was captured to show the expense summary after additional expense records were added.
 
-The tests were created for:
+**Screenshot: Additional Expense Summary**
 
-- Expense class
-- Input validation
-- Expense management
-- Saving and loading expenses
-
-All four individual test files completed successfully without errors.
-
-**Screenshot: Test Results**
-
-_Insert the screenshots showing the successful test results here._
+![Additional Expense Summary](screenshots/summary2.png)
 
 # 15. Testing
 
@@ -601,6 +604,7 @@ The following features were checked:
 
 The manual tests confirmed that the main features of the application were working as expected.
 
+
 # 16. Challenges Faced
 
 While developing the Personal Expense Tracker, I faced a few challenges during the implementation and testing of the project.
@@ -629,6 +633,7 @@ Testing the different modules separately was also a learning experience.
 
 Python's `unittest` module was used to test important parts of the project, including expense creation, validation, expense management, and storage.
 
+
 # 17. Learnings
 
 Developing the Personal Expense Tracker helped me understand how different Python concepts can be combined to create a complete project.
@@ -649,6 +654,7 @@ The main things I learned from this project are:
 
 I also learned that testing and organizing code into separate modules makes it easier to find and fix problems in a project.
 
+
 # 18. Future Enhancements
 
 The current version of the Personal Expense Tracker focuses on basic expense management. The project can be improved further by adding more features in the future.
@@ -664,6 +670,7 @@ Some possible enhancements are:
 - Add user accounts and login functionality.
 - Add monthly and yearly expense summaries.
 - Add a budget feature to help users track spending limits.
+
 
 # 19. References
 
